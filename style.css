@@ -1,0 +1,41 @@
+:root {
+    --CurrentDaySize: 25vmax;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 70vh;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #585858;
+}
+
+.Title {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 8;
+    font-size: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: white;
+}
+
+#CurrentDay {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
