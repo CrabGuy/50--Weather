@@ -10,8 +10,9 @@ const SeededRandom = (seed) => (((seed % Modulus) * Multiplier) % Modulus - 1) /
 
 const GetRandomInt = (Seed, Max) => Math.ceil(SeededRandom(Seed) * Max)
 
-const Day = 24 * 60 * 60
-const Seed = Math.floor(Date.now() / Day)
+const Day = 24 * 60 * 60 * 1000
+const CurrentTime = Date.now()
+const Seed = Math.floor(CurrentTime / Day)
 
 const CurrentWeather = GetRandomInt(Seed, PossibleWheaders.length)
 const Shiny = GetRandomInt(Seed, 100) == 1
