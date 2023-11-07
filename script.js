@@ -6,7 +6,7 @@ const Multiplier = 1680769690;
 const Modulus = 2147483647;
 const RandomMax = 0x7FFFFFFF;
 
-const SeededRandom = (seed) => (((seed % Modulus) * Multiplier) % Modulus - 1) / RandomMax
+const SeededRandom = (Seed) => (((Seed % Modulus) * Multiplier) % Modulus - 1) / RandomMax
 
 const GetRandomInt = (Seed, Max) => Math.ceil(SeededRandom(Seed) * Max)
 
